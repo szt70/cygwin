@@ -209,7 +209,15 @@ function gvim() {
     cygstart /cygdrive/c/Program\ Files/gvim/gvim  -p --remote-tab-silent `cygpath -aw $*` &
 }
 
+function msysgit() {
+    cygstart /cygdrive/c/Program\ Files\ \(x86\)/Git/bin/sh.exe 
+}
 
+#export GIT_EDITOR="/cygdrive/c/Program\ Files\ \(x86\)/sakura/sakura.exe "
+
+#PATH=/cygdrive/c/Program\ Files/gvim/:${PATH}
+#export GIT_EDITOR="/cygdrive/c/Program\ Files/Sublime\ Text\ 2/sublime_text.exe"
+#export GIT_EDITOR="'gvim' -c 'set fenc=utf-8'"
 #alias sakura=' cygstart /cygdrive/c/Program\ Files\ \(x86\)/sakura/sakura.exe $1'
 #alias sublime=' cygstart /cygdrive/c/Program\ Files/Sublime\ Text\ 2/sublime_text.exe $1'
 
