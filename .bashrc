@@ -195,8 +195,22 @@
 #   return 0
 # }
 # 
-alias vim='/cygdrive/c/Program\ Files/gvim/gvim'
-alias sakura=" cygstart /cygdrive/c/Program\ Files\ \(x86\)/sakura/sakura.exe $1"
-alias sublime=" cygstart /cygdrive/c/Program\ Files/Sublime\ Text\ 2/sublime_text.exe $1"
+
+function sakura() {
+    cygstart /cygdrive/c/Program\ Files\ \(x86\)/sakura/sakura.exe `cygpath -aw $*` &
+}
+function sublime() {
+    cygstart /cygdrive/c/Program\ Files/Sublime\ Text\ 2/sublime_text.exe `cygpath -aw $*` &
+}
+function terapad() {
+    cygstart /cygdrive/c/Program\ Files\ \(x86\)/TeraPad/TeraPad.exe `cygpath -aw $*` &
+}
+function gvim() {
+    cygstart /cygdrive/c/Program\ Files/gvim/gvim  -p --remote-tab-silent `cygpath -aw $*` &
+}
+
+
+#alias sakura=' cygstart /cygdrive/c/Program\ Files\ \(x86\)/sakura/sakura.exe $1'
+#alias sublime=' cygstart /cygdrive/c/Program\ Files/Sublime\ Text\ 2/sublime_text.exe $1'
 
 # alias cd=cd_func
