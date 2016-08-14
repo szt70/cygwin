@@ -208,7 +208,6 @@ function terapad() {
 function gvim() {
     cygstart /cygdrive/c/Program\ Files/gvim/gvim  -p --remote-tab-silent `cygpath -aw $*` &
 }
-
 function msysgit() {
     cygstart /cygdrive/c/Program\ Files\ \(x86\)/Git/bin/sh.exe 
 }
